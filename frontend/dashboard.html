@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h2>Attendance Dashboard</h2>
+    <button onclick="markAttendance('Present')">Mark Present</button>
+    <button onclick="markAttendance('Absent')">Mark Absent</button>
+    <h3>Your Attendance History</h3>
+    <table id="attendance-table">
+        <tr><th>Status</th><th>Timestamp</th></tr>
+    </table>
+    <script src="js/main.js"></script>
+    <script>
+        // Load history on page load
+        loadAttendanceHistory();
+    </script>
+</body>
+</html>
